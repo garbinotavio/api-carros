@@ -53,6 +53,6 @@ cd frontend
 
 ## 🌐 Endereço da API
 
-http://127.0.0.1:5500/frontend/index.html
+http://10.106.208.32:3000
 
 
