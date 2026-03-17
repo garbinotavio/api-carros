@@ -49,7 +49,7 @@ app.get("/api/carros/aleatorio", (req, res) => {
   res.json({
     status: "success",
     personagem: "Aleatório",
-    url: `http://localhost:${PORT}/fotos/${fotoSorteada}`
+    url: `http://10.106.208.32:${PORT}/fotos/${fotoSorteada}`
   });
 });
 
@@ -70,14 +70,14 @@ app.get("/api/carros/:personagem", (req, res) => {
   res.json({
     status: "success",
     personagem: personagem.charAt(0).toUpperCase() + personagem.slice(1),
-    url: `http://localhost:${PORT}/fotos/${fotoSorteada}`
+    url: `http://10.106.208.32:${PORT}/fotos/${fotoSorteada}`
   });
 });
 
 // Inicia o servidor (0.0.0.0 permite acesso da rede local)
 app.listen(PORT, '0.0.0.0', () => {
-  console.log(`🚗 API Carros Pixar rodando em http://localhost:${PORT}`);
-  console.log(`   → Aleatório:     http://localhost:${PORT}/api/carros/aleatorio`);
-  console.log(`   → Exemplo:        http://localhost:${PORT}/api/carros/mcqueen`);
+  console.log(`🚗 API Carros Pixar rodando em http://10.106.208.32:${PORT}`);
+  console.log(`   → Aleatório:     http://10.106.208.32:${PORT}/api/carros/aleatorio`);
+  console.log(`   → Exemplo:        http://10.106.208.32:${PORT}/api/carros/mcqueen`);
   console.log(`   → Imagens em:     data/fotos/`);
 });

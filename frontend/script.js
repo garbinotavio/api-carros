@@ -11,7 +11,7 @@ const carArea = document.getElementById("carArea");
 // ==============================
 // API
 // ==============================
-const API_BASE = "http://localhost:3000/api/carros";  // altere para IP se testar em outra máquina
+const API_BASE = "http://10.106.208.32:3000/api/carros";  // altere para IP se testar em outra máquina
 
 // ==============================
 // FUNÇÃO PRINCIPAL PARA BUSCAR
